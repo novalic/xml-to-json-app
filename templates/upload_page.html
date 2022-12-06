@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <body>
+        <p>
+            <form action="{% url 'upload-file' %}" enctype='multipart/form-data' method='post'>
+                {% csrf_token %}
+                <input type='file' name='file'>
+                <br>
+                <br>
+                <input type='submit' value='Upload'>
+            </form>
+        </p>
+    </body>
+</html>
